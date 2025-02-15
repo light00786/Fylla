@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-size: clamp(16px, 1rem, 20px);
+}
+
+main {
+  border: 1px solid black;
+  padding: 0rem 1rem;
+}
+main .lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .line {
+  width: 95%;
+  background-color: black;
+  height: 1px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  align-items: center;
+  border-bottom: 0px solid black;
+}
+.nav .one .ones {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav .one .ones h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+.nav .one .svg {
+  height: 3rem;
+}
+.nav .links h4 {
+  display: none;
+}
+.nav .links button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.2rem;
+  background-color: black;
+  color: white;
+  font-size: 0.7rem;
+  border: 1px solid wheat;
+}
+
+.view-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.view-1 p {
+  font-family: sans-serif;
+  opacity: 50%;
+  font-size: 1.2rem;
+}
+.view-1 h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  line-height: 3.5rem;
+  font-size: 4rem;
+}
+.view-1 img {
+  border-radius: 0.5rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.view-2 {
+  margin-bottom: 4rem;
+}
+.view-2 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.view-2 .top p {
+  font-family: sans-serif;
+  opacity: 50%;
+  font-size: 1.2rem;
+}
+.view-2 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .text h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 200;
+  line-height: 2.9rem;
+  font-size: 3.5rem;
+}
+.view-2 .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.2rem;
+  background-color: black;
+  color: white;
+  font-size: 0.7rem;
+  border: 1px solid wheat;
+  margin-bottom: 3rem;
+}
+.view-2 .line {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+}
+.view-2 .bottom {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .bottom .line {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+}
+.view-2 .bottom .one {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.view-2 .bottom .one svg {
+  width: 25%;
+}
+.view-2 .bottom .one p {
+  font-family: sans-serif;
+}
+
+.view-3 {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-3 .top {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.view-3 .top h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 200;
+  line-height: 2.9rem;
+  font-size: 3.5rem;
+}
+.view-3 .top p {
+  font-family: sans-serif;
+  opacity: 50%;
+  font-size: 1.3rem;
+}
+.view-3 .top p br {
+  display: none;
+}
+.view-3 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-3 .bottom .one video {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+.view-3 .bottom .one h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.view-3 .bottom .one p {
+  font-family: sans-serif;
+}
+
+.view-4 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-4 .line {
+  display: none;
+}
+.view-4 .one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-4 .one svg {
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+.view-4 .one p {
+  font-size: 1rem;
+}
+.view-4 .one h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.view-4 .two {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.view-4 .two h5 {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+.view-4 .two button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  background-color: black;
+  color: white;
+  font-size: 0.9rem;
+  border: 1px solid wheat;
+  margin-bottom: 3rem;
+}
+
+.view-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.view-5 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-5 .one {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.view-5 .one h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.view-5 .one svg {
+  width: 3rem;
+  aspect-ratio: 1/1;
+}
+.view-5 .two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.view-5 .two h5 {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.view-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.view-6 .one h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.7rem;
+}
+.view-6 .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.view-6 .links h5 {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.view-6 button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  background-color: black;
+  color: white;
+  font-size: 0.7rem;
+  border: 1px solid wheat;
+  margin-bottom: 3rem;
+}
+
+.view-7 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.view-7 .one h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.7rem;
+}
+.view-7 .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.view-7 .links h5 {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.view-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.view-8 .one h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.7rem;
+}
+.view-8 .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.view-8 .links h5 {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+@media (min-width: 768px) {
+  .view-1 h1 {
+    font-size: 5.5rem;
+    line-height: 4.5rem;
+    font-weight: 400;
+  }
+  .view-2 .bottom .one {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .view-2 .bottom .one svg {
+    width: 4rem;
+  }
+  .view-2 .bottom .one h1 {
+    font-size: 2rem;
+  }
+  .view-2 .bottom .one p {
+    font-size: 1rem;
+    opacity: 80%;
+    line-height: 1.8rem;
+  }
+  .view-3 .container .top h1 {
+    width: 30%;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .view-3 .container .top p br {
+    display: block;
+  }
+  .view-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .view-4 .one {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .view-4 .one h1 {
+    font-size: 2.9rem;
+    font-weight: 200;
+  }
+  .view-4 .two {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .view-4 .two h5 {
+    opacity: 90%;
+    font-size: 1.25rem;
+    font-weight: 100;
+  }
+  .view-5 .container-2 .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .nav .links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .links h4 {
+    display: block;
+  }
+  .nav .links h4 {
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  .nav .links button {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.2rem;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    border: 1px solid wheat;
+  }
+  .view-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 4rem;
+    padding: 0rem 2.5rem;
+  }
+  .view-1 h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    font-size: 7.5rem;
+    line-height: 6rem;
+  }
+  .view-2 {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .view-2 .top .text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .view-2 .top .text h1 {
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+  .view-2 .top .text button {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+  .view-2 .line {
+    height: initial;
+    width: 1px;
+  }
+  .view-2 .bottom .line {
+    width: 100%;
+    background-color: black;
+    height: 1px;
+  }
+  .view-2 .bottom p {
+    font-size: 1.1rem;
+  }
+  .view-3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+  .view-3 .line {
+    width: 1px;
+    height: inherit;
+  }
+  .view-3 .container {
+    position: relative;
+  }
+  .view-3 .container .top {
+    position: sticky;
+    top: 0;
+  }
+  .view-3 .container .top h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+  .view-3 .bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0rem;
+  }
+  .view-3 .bottom .one video {
+    width: 22rem;
+  }
+  .view-4 {
+    width: 100%;
+    aspect-ratio: 1/0.5;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+  .view-4 .line {
+    display: block;
+    width: 1px;
+    height: initial;
+  }
+  .view-4 .one {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+  }
+  .view-4 .one p {
+    font-size: 1rem;
+  }
+  .view-4 .one h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .view-4 .two {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .view-4 .two h5 {
+    padding: 0rem 3rem;
+    font-size: 1.6rem;
+    opacity: 80%;
+    font-weight: 100;
+    line-height: 2.5rem;
+  }
+  .view-4 .two button {
+    font-size: 1.2rem;
+  }
+  .view-5 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .view-5 .line {
+    height: initial;
+    width: 1px;
+  }
+  .view-5 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+  }
+  .view-5 .container-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .view-5 .container-2 .line {
+    display: none;
+  }
+  .view-5 .container-2 .view-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .view-5 .container-2 .view-6 .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .view-5 .container-2 .view-6 button {
+    font-size: 0.8rem;
+    padding: 0.7rem 1.5rem;
+  }
+  .view-5 .container-2 .view-7 .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .view-5 .container-2 .view-8 .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
